@@ -84,9 +84,9 @@ public class CinchsBetterDeepslate {
             index++;
             items.set(index, new ItemStack(ModBlocks.DEEPSLATE_WALL.get()));
             index++;
-            items.set(index, new ItemStack(ModBlocks.POLISHED_DEEPSLATE_BUTTON.get()));
-            index++;
             items.set(index, new ItemStack(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE.get()));
+            index++;
+            items.set(index, new ItemStack(ModBlocks.POLISHED_DEEPSLATE_BUTTON.get()));
             index++;
             items.set(index, new ItemStack(ModItems.DEEPSLATE_SWORD.get()));
             index++;
