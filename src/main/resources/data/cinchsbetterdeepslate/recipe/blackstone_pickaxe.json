@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:blackstone"
-    },
-    "I": {
-      "item": "minecraft:stick"
-    }
+    "A": "minecraft:blackstone",
+    "I": "minecraft:stick"
   },
   "pattern": [
     "AAA",

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": {
-      "item": "cinchsbetterdeepslate:mossy_deepslate_bricks"
-    }
+    "A": "cinchsbetterdeepslate:mossy_deepslate_bricks"
   },
   "pattern": [
     "AAA",
