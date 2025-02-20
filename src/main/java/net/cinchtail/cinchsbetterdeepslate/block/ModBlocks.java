@@ -91,10 +91,12 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(CinchsBetterDeepslate.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()
+                        .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, name))).useBlockPrefixedTranslationKey()));
     }
+
     public static Block CreatePolishedDeepslateButton() {
         return new ButtonBlock(ModBlockSetType.POLISHED_DEEPSLATE, 20, AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY).registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                 Identifier.of(CinchsBetterDeepslate.MOD_ID, "polished_deepslate_button"))));
