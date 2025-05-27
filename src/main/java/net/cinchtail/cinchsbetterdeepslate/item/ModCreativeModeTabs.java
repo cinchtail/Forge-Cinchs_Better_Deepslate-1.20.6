@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACKSTONE_SHOVEL.get());
                         output.accept(ModItems.BLACKSTONE_HOE.get());
                     }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
