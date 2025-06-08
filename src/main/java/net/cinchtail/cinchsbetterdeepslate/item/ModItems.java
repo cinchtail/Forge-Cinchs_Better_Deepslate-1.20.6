@@ -26,6 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> DEEPSLATE_HOE = ITEMS.register("deepslate_hoe",
             () -> new HoeItem(ModTiers.DEEPSLATE,-1, -2F,
                     new Item.Properties().tab(CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB)));
+
     public static final RegistryObject<Item> BLACKSTONE_SWORD = ITEMS.register("blackstone_sword",
             () -> new SwordItem(ModTiers.BLACKSTONE,3, -2.4F,
                     new Item.Properties().tab(CinchsBetterDeepslate.CINCHSBETTERDEEPSLATE_TAB)));
