@@ -18,6 +18,7 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.DEEPSLATE, new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.DEEPSLATE,1.5F, -3F))));
     public static final DeferredItem<Item> DEEPSLATE_HOE = ITEMS.register("deepslate_hoe",
             () -> new HoeItem(ModToolTiers.DEEPSLATE, new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.DEEPSLATE,-1F, -2F))));
+
     public static final DeferredItem<Item> BLACKSTONE_SWORD = ITEMS.register("blackstone_sword",
             () -> new SwordItem(ModToolTiers.BLACKSTONE, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.BLACKSTONE,3, -2.4F))));
     public static final DeferredItem<Item> BLACKSTONE_PICKAXE = ITEMS.register("blackstone_pickaxe",
