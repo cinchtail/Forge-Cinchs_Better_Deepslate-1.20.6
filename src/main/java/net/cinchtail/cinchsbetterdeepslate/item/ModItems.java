@@ -12,21 +12,6 @@ import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item BLACKSTONE_SWORD = registerItem("blackstone_sword",
-            properties -> new SwordItem(ModToolMaterials.BLACKSTONE, 3, -2.4F, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_sword")))));
-    public static final Item BLACKSTONE_PICKAXE = registerItem("blackstone_pickaxe",
-            properties -> new PickaxeItem(ModToolMaterials.BLACKSTONE, 1.0F, -2.8F, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_pickaxe")))));
-    public static final Item BLACKSTONE_AXE = registerItem("blackstone_axe",
-            properties -> new AxeItem(ModToolMaterials.BLACKSTONE, 7.0F, -3.2F, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_axe")))));
-    public static final Item BLACKSTONE_SHOVEL = registerItem("blackstone_shovel",
-            properties -> new ShovelItem(ModToolMaterials.BLACKSTONE, 1.5F, -3.0F, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_shovel")))));
-    public static final Item BLACKSTONE_HOE = registerItem("blackstone_hoe",
-            properties -> new HoeItem(ModToolMaterials.BLACKSTONE, -1.0F, -2.0F, new Item.Settings()
-                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_hoe")))));
     public static final Item DEEPSLATE_SWORD = registerItem("deepslate_sword",
             properties -> new SwordItem(ModToolMaterials.DEEPSLATE, 3, -2.4F, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "deepslate_sword")))));
@@ -42,6 +27,22 @@ public class ModItems {
     public static final Item DEEPSLATE_HOE = registerItem("deepslate_hoe",
             properties -> new HoeItem(ModToolMaterials.DEEPSLATE, -1.0F, -2.0F, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "deepslate_hoe")))));
+
+    public static final Item BLACKSTONE_SWORD = registerItem("blackstone_sword",
+            properties -> new SwordItem(ModToolMaterials.BLACKSTONE, 3, -2.4F, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_sword")))));
+    public static final Item BLACKSTONE_PICKAXE = registerItem("blackstone_pickaxe",
+            properties -> new PickaxeItem(ModToolMaterials.BLACKSTONE, 1.0F, -2.8F, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_pickaxe")))));
+    public static final Item BLACKSTONE_AXE = registerItem("blackstone_axe",
+            properties -> new AxeItem(ModToolMaterials.BLACKSTONE, 7.0F, -3.2F, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_axe")))));
+    public static final Item BLACKSTONE_SHOVEL = registerItem("blackstone_shovel",
+            properties -> new ShovelItem(ModToolMaterials.BLACKSTONE, 1.5F, -3.0F, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_shovel")))));
+    public static final Item BLACKSTONE_HOE = registerItem("blackstone_hoe",
+            properties -> new HoeItem(ModToolMaterials.BLACKSTONE, -1.0F, -2.0F, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CinchsBetterDeepslate.MOD_ID, "blackstone_hoe")))));
 
     public static <T extends Item> T registerItem(String name, Function<Item.Settings, T> factory) {
         return register(name, factory, new Item.Settings());
