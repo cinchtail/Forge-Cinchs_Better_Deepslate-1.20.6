@@ -26,6 +26,7 @@ public class ModItems {
     public static final DeferredItem<HoeItem> DEEPSLATE_HOE = ITEMS.register("deepslate_hoe",
             () -> new HoeItem(ModToolTiers.DEEPSLATE, 1.0F, -2.0f, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "deepslate_hoe")))));
+
     public static final DeferredItem<SwordItem> BLACKSTONE_SWORD = ITEMS.register("blackstone_sword",
             () -> new SwordItem(ModToolTiers.BLACKSTONE, 3, -2.4F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(CinchsBetterDeepslate.MOD_ID, "blackstone_sword")))));
